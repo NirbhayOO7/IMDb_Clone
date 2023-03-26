@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/01fcbb8cc8.js" crossorigin="anonymous"></script>
+    <title>IMDb Clone</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <div>
+                <a href="index.html"><img src="./assets/images/logo.png" alt="logo" id="logo-img"></a>
+            </div>
+            <div id="search-bar">
+                <input type="text" name="searchMovie" id="searchMovie" placeholder="Search...">
+                <button id="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <div id="favourites">
+                <a href="my_favourite.html"><h4>My Favourites</h4></a>
+            </div>
+        </div>
+        <div id="page-heading">
+            <h2>Latest Release</h2>
+        </div>
+    </header>
+    <main>
+        <div id="movie-container">
+            <div class="movie-item">
+                <img src="https://m.media-amazon.com/images/M/MV5BNjM0NTc0NzItM2FlYS00YzEwLWE0YmUtNTA2ZWIzODc2OTgxXkEyXkFqcGdeQXVyNTgwNzIyNzg@._V1_SX300.jpg" alt="">
+                <div class="movie-name">Guardians of the Galaxy Vol. 2</div>
+                <div class="rating-and-favourite">
+                    <span class="rating">7.6<i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
+                    <span><a href=""><i class="fa-solid fa-plus"></i></a></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
