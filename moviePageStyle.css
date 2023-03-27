@@ -1,0 +1,34 @@
+/* styling to body and home page background image. */
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('./assets/images/body_background.png');
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Styling to header elments like logo, search bar, and My favourites. */
+#header{
+    height: 90px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo-img{
+    height: 72px;
+}
+
+#favourites h4{
+    color: white;
+}
+
+#favourites h4:hover{
+    color: red;
+}
+
+#page-heading{
+    text-align: center;
+}

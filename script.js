@@ -54,11 +54,11 @@ function createElement(movie){
     const div = document.createElement('div');
     div.className = 'movie-item';
 
-    div.innerHTML = `<img src="${TMDB_IMAGE_BASE_URL+movie.poster_path}" alt="">
+    div.innerHTML = `<a href="./moviePage.html?id=${movie.id}"><img src="${TMDB_IMAGE_BASE_URL+movie.poster_path}" alt=""></a>
                     <div class="movie-name">${movie.original_title}</div>
                     <div class="rating-and-favourite">
                         <span class="rating">${movie.vote_average}<i class="fa-solid fa-star" style="color: #ffd700;"></i></span>
-                        <span><a href=""><i class="fa-sharp fa-solid fa-heart" style="color: #c80000;"></i></a></span>
+                        <span><a href=""><i class="fa-sharp fa-solid fa-heart" style="color: #fcf7f7;"></i></a></span>
                     </div>`
     return div;
 }
