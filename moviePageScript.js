@@ -36,13 +36,16 @@ function renderMovieDetails(movieDetailsJson){
     movieContainer.innerHTML = `<div id="movie-image">
                                     <img src="${TMDB_IMAGE_BASE_URL+movieDetailsJson.poster_path}" alt="">
                                 </div>
-                                <div id="movie-deatils">
-                                    <div id="movie-name">${movieDetailsJson.original_title}</div>
-                                    <span id="produced-by">${movieDetailsJson.production_companies[0].name}</span>
-                                    <span id="runtime">${movieDetailsJson.runtime}</span>
-                                    <span id="release-date">${movieDetailsJson.release_date}</span>
-                                    <div id="imdb-rating">${movieDetailsJson.vote_average}</div>
-                                    <div id="plot">${movieDetailsJson.overview}</div>
+                                <div id="movie-details">
+                                    <h1 id="movie-name">${movieDetailsJson.original_title}</h1>
+                                    <span id="runtime">Runtime:${movieDetailsJson.runtime}</span>
+                                    <span id="release-date">Release-date:${movieDetailsJson.release_date}</span>
+                                    <br>
+                                    <div id="imdb-rating">IMDB:${movieDetailsJson.vote_average}</div>
+                                    <br>
+                                    <div id="plot">Plot:<br>${movieDetailsJson.overview}</div><br>
+                                    <span>Budget:${movieDetailsJson.budget}</span><br>
+                                    <span>Revenue:${movieDetailsJson.revenue}</span>
                                 </div>`
 
 }
