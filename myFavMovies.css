@@ -1,0 +1,64 @@
+/* Styling to add background image and to style the body  */
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('./assets/images/body_background.png');
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Styling to header elments like logo, search bar, and My favourites. */
+#header{
+    height: 90px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo-img{
+    height: 72px;
+}
+
+#page-heading{
+    text-align: center;
+}
+
+/* styling for elements in favourite movie list items*/
+ul{
+    list-style: none;
+    margin: 20px;
+    margin-right: 40px;
+}
+.thumbnail img{
+    height: 80px;
+    width: 60px;
+}
+
+li{
+    border-style:  none;
+    border-bottom: 2px solid white;
+    font-size: 30px;
+    width: inherit;
+    position: relative;
+}
+
+.movie-details{
+    vertical-align: super;
+}
+
+.movie-details a{
+    color: white;
+}
+
+.movie-details a:hover{
+    color: rgb(238, 33, 33);
+}
+
+.delete-button{
+    cursor: pointer;
+    position: absolute;
+    top: 45px;
+    right: 10px;
+}

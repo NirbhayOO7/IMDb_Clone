@@ -9,7 +9,7 @@ body{
     color: rgb(181, 166, 166);
 }
 
-/* Styling to header elments like logo, search bar, and My favourites. */
+/* Styling to header elments like logo and My favourites. */
 #header{
     height: 90px;
     margin: 10px;
@@ -34,7 +34,6 @@ body{
 }
 
 /* Styling movie container(movie image+details) */
-
 #movie-container{
     width: 80%;
     height: 70vh;
@@ -68,7 +67,6 @@ body{
 
 #movie-name{
     font-family: monospace;
-    /* font-weight: bolder; */
     font-size: 45px;
     line-height: 35px;
 }

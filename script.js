@@ -21,7 +21,7 @@ function showNotification(message){
     return;
 }
 
-//function for api call
+//function for api call to get the json data from TMDB database
 async function apiCallForInput(url){
     try{
         let response = await fetch(url);
@@ -45,12 +45,9 @@ function renderMoviesList(){
         let div  = createElement(movieList[i]);
         movieContainer.appendChild(div);
     }
-
-    // console.log(movieList[2]);
 }
 
-// create the div element inside the movie-conatiner
-
+// function to create the div element inside the movie-conatiner
 function createElement(movie){
     // console.log(movie.original_title);
     const div = document.createElement('div');
@@ -86,7 +83,7 @@ function createElement(movie){
     return div;
 }
 
-// what to to when we enter keywords in search bar 
+// what to do when we enter keywords in search bar(handle events for each keypress in search bar)
 searchMovie.addEventListener('keyup', ()=>{
     
     let searchInput = searchMovie.value;
@@ -103,12 +100,7 @@ searchMovie.addEventListener('keyup', ()=>{
 
 });
 
-// localStorage.clear();
-// localStorage.setItem('moviesId',[1234, 4567]);
-// const temp = localStorage.getItem('moviesId').split(',');
-// console.log(typeof(temp), temp);
-
-
+// function to add the id of movies which you want to mark them as your favourite
 function addToFavouriteList(id){
     if(localStorage.getItem('moviesId')==null){
         localStorage.setItem('moviesId', [id]);
@@ -131,20 +123,15 @@ function addToFavouriteList(id){
 
         if(!isFound){
             oldMoviesId.push(id);
-            // console.log('movie not found in list', oldMoviesId);
             document.getElementById(id).innerHTML = '<i class="fa-sharp fa-solid fa-heart" style="color: #ff0000;"></i>';
         }
 
         if(oldMoviesId.length==0){
-            // console.log('oldMovies list length is 0');
             localStorage.clear();
         }
         else{
             localStorage.setItem('moviesId', oldMoviesId);
         }
-        // console.log(localStorage.getItem('moviesId'));
     }
 }
 
-console.log(localStorage.getItem('moviesId'));
-// localStorage.clear();
