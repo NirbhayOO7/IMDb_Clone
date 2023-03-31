@@ -91,3 +91,6 @@ body{
     padding: 3px;
 }
 
+.add-to-favourite{
+    cursor: pointer;
+}
